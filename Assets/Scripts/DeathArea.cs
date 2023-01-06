@@ -11,8 +11,10 @@ public class DeathArea : MonoBehaviour
         if (collision.transform.tag == "Player")
         {
             onDeath?.Invoke();
+
             StartCoroutine(LevelPass.Dely(4.5f, () =>
             {
+
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }));
 

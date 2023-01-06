@@ -56,20 +56,20 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\PIAPixelArtEditor\Editor\PIADrawer.cs" />
-    <Compile Include="Assets\PIAPixelArtEditor\Editor\PIAExportSettingsWindow.cs" />
-    <Compile Include="Assets\PIAPixelArtEditor\Editor\PIAImageData.cs" />
-    <Compile Include="Assets\PIAPixelArtEditor\Editor\WindowSection.cs" />
-    <Compile Include="Assets\PIAPixelArtEditor\Editor\PIAFrame.cs" />
-    <Compile Include="Assets\PIAPixelArtEditor\Editor\PIASession.cs" />
-    <Compile Include="Assets\PIAPixelArtEditor\Editor\PIAExtendedPreviewWindow.cs" />
-    <Compile Include="Assets\PIAPixelArtEditor\Editor\PIAAnimator.cs" />
-    <Compile Include="Assets\PIAPixelArtEditor\Editor\PIAInputArea.cs" />
-    <Compile Include="Assets\PIAPixelArtEditor\Editor\PIANewImageWindow.cs" />
     <Compile Include="Assets\PIAPixelArtEditor\Editor\PIATexture.cs" />
     <Compile Include="Assets\PIAPixelArtEditor\Editor\PIAEditorWindow.cs" />
-    <Compile Include="Assets\PIAPixelArtEditor\Editor\PIATextureDatabase.cs" />
     <Compile Include="Assets\PIAPixelArtEditor\Editor\PIAGrid.cs" />
+    <Compile Include="Assets\PIAPixelArtEditor\Editor\PIANewImageWindow.cs" />
+    <Compile Include="Assets\PIAPixelArtEditor\Editor\PIAExportSettingsWindow.cs" />
+    <Compile Include="Assets\PIAPixelArtEditor\Editor\PIAExtendedPreviewWindow.cs" />
+    <Compile Include="Assets\PIAPixelArtEditor\Editor\PIASession.cs" />
+    <Compile Include="Assets\PIAPixelArtEditor\Editor\PIAFrame.cs" />
+    <Compile Include="Assets\PIAPixelArtEditor\Editor\PIADrawer.cs" />
+    <Compile Include="Assets\PIAPixelArtEditor\Editor\PIATextureDatabase.cs" />
+    <Compile Include="Assets\PIAPixelArtEditor\Editor\PIAAnimator.cs" />
+    <Compile Include="Assets\PIAPixelArtEditor\Editor\WindowSection.cs" />
+    <Compile Include="Assets\PIAPixelArtEditor\Editor\PIAInputArea.cs" />
+    <Compile Include="Assets\PIAPixelArtEditor\Editor\PIAImageData.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
