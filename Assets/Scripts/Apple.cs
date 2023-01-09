@@ -10,6 +10,7 @@ public class Apple : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            new EatAppleCommand().Excute();
             OnGet?.Invoke();
             Destroy(gameObject);
         }

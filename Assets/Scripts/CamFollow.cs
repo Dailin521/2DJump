@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CamFollow : MonoBehaviour
 {
@@ -10,6 +8,10 @@ public class CamFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(player.position.x, Mathf.Clamp((player.position.y + 2), 2, 8), -10);
+
+        if (player != null)
+        {
+            transform.position = new Vector3(player.position.x, Mathf.Clamp((player.position.y + 2), -1, 20), -10);
+        }
     }
 }

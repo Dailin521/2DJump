@@ -10,6 +10,7 @@ public class DeathArea : MonoBehaviour
     {
         if (collision.transform.tag == "Player")
         {
+            Destroy(collision.gameObject);
             onDeath?.Invoke();
 
             StartCoroutine(LevelPass.Dely(4.5f, () =>
