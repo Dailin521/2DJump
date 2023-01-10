@@ -59,6 +59,7 @@
     <Compile Include="Assets\PIAPixelArtEditor\Editor\PIATexture.cs" />
     <Compile Include="Assets\PIAPixelArtEditor\Editor\PIAEditorWindow.cs" />
     <Compile Include="Assets\PIAPixelArtEditor\Editor\PIAGrid.cs" />
+    <Compile Include="Assets\Editor\CopyPath.cs" />
     <Compile Include="Assets\PIAPixelArtEditor\Editor\PIANewImageWindow.cs" />
     <Compile Include="Assets\PIAPixelArtEditor\Editor\PIAExportSettingsWindow.cs" />
     <Compile Include="Assets\PIAPixelArtEditor\Editor\PIAExtendedPreviewWindow.cs" />
@@ -70,7 +71,6 @@
     <Compile Include="Assets\PIAPixelArtEditor\Editor\WindowSection.cs" />
     <Compile Include="Assets\PIAPixelArtEditor\Editor\PIAInputArea.cs" />
     <Compile Include="Assets\PIAPixelArtEditor\Editor\PIAImageData.cs" />
-    <Compile Include="Assets\Editor\CopyPath.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

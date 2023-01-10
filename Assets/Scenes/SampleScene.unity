@@ -6854,6 +6854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  isTest: 1
 --- !u!1 &554460755
 GameObject:
   m_ObjectHideFlags: 0
@@ -10295,7 +10296,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2075736130
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10499,6 +10500,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4486755237982125580, guid: 4e1fac9fa2f17e041bd109cc4e90dc71, type: 3}
+      propertyPath: horizontalMovementSpeed
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486755237982125580, guid: 4e1fac9fa2f17e041bd109cc4e90dc71, type: 3}
       propertyPath: onJump.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1607349693}
@@ -10554,13 +10559,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4486755237982125616, guid: 4e1fac9fa2f17e041bd109cc4e90dc71, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: f8946544f0321bb4e871d5b8ca6a5b52, type: 2}
     - target: {fileID: 4486755237982125617, guid: 4e1fac9fa2f17e041bd109cc4e90dc71, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4486755237982125617, guid: 4e1fac9fa2f17e041bd109cc4e90dc71, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e1fac9fa2f17e041bd109cc4e90dc71, type: 3}
