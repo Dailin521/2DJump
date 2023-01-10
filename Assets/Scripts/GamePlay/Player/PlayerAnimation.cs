@@ -7,6 +7,7 @@ public class PlayerAnimation : MonoBehaviour
     private PlayerMovement mPlayerMovement;
     private Vector3 Scale;
     private float xOffest;
+    private float yOffest;
     void Start()
     {
         mRigidbody2D = GetComponent<Rigidbody2D>();
@@ -17,7 +18,8 @@ public class PlayerAnimation : MonoBehaviour
     void Update()
     {
         xOffest = Mathf.Abs(mRigidbody2D.velocity.x / mPlayerMovement.horizontalMovementSpeed);
-        Scale = new Vector3(0.7f + 0.3f * xOffest, 0.7f + 0.3f, 1);
+        yOffest = Mathf.Abs(mRigidbody2D.velocity.y / mPlayerMovement.jumptSpeed);
+        Scale = new Vector3(0.7f + 0.4f * xOffest, 0.7f + 0.3f * yOffest / 2, 1);
         transform.localScale = Scale;
     }
 }

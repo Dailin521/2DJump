@@ -58,16 +58,19 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Tool\ICommand.cs" />
-    <Compile Include="Assets\Scripts\LevelPass.cs" />
-    <Compile Include="Assets\Scripts\PlayerAnimation.cs" />
-    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\DeathArea.cs" />
-    <Compile Include="Assets\Scripts\Tool\LevelTime.cs" />
-    <Compile Include="Assets\Scripts\CamFollow.cs" />
-    <Compile Include="Assets\Scripts\Apple.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\Level\LevelPass.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\Player\PlayerAnimation.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\Player\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\Level\DeathArea.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\Level\LevelTime.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\cam\CamFollow.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\PowerUp\Apple.cs" />
     <Compile Include="Assets\Scripts\Command\EatAppleCommand.cs" />
     <Compile Include="Assets\Scripts\Tool\LayerMaskUtility.cs" />
-    <Compile Include="Assets\Scripts\Trigger2D.cs" />
+    <Compile Include="Assets\Scripts\Tool\Trigger2D.cs" />
+    <Compile Include="Assets\Scripts\Action\PlayAudio.cs" />
+    <Compile Include="Assets\Scripts\Action\DestroyGameObject.cs" />
+    <Compile Include="Assets\Scripts\Action\SetAsParent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

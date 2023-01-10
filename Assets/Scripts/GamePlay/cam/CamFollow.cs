@@ -14,9 +14,8 @@ public class CamFollow : MonoBehaviour
 
     }
     // Update is called once per frame
-    void Update()
+    private void LateUpdate()
     {
-
         if (player != null)
         {
             transform.position = new Vector3(player.position.x, Mathf.Clamp((player.position.y + 2), -1, 20), -10);
