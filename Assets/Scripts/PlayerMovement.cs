@@ -25,15 +25,12 @@ public class PlayerMovement : MonoBehaviour
         NotJump, ControlJump, MinJump
     }
     public JumpStates jumpState = JumpStates.NotJump;
-    public UnityEvent onLand;
+    public Trigger2D GroundCheck;
     public UnityEvent onJump;
     void Start()
     {
         mRigidbody = GetComponent<Rigidbody2D>();
-        onLand.AddListener(() =>
-        {
-            GameObject.Find("Sounds/land").GetComponent<AudioSource>().Play();
-        });
+
         onJump.AddListener(() =>
         {
             GameObject.Find("Sounds/land").GetComponent<AudioSource>().Stop();
@@ -85,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
     void PlayerMoveGet()
     {
         xMove = Input.GetAxis("Horizontal");
-        if (Input.GetKeyDown(KeyCode.K) && collisionObjectCount > 0)
+        if (Input.GetKeyDown(KeyCode.K) && GroundCheck.Triggered)
         {
             onJump?.Invoke();
             mJumpPressed = true;
@@ -101,20 +98,6 @@ public class PlayerMovement : MonoBehaviour
         }
         mCurrentJumpTime += Time.deltaTime;
     }
-    public int collisionObjectCount = 0;
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.transform.CompareTag("Ground"))
-        {
-            collisionObjectCount++;
-            onLand?.Invoke();
 
-        }
-    }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.transform.CompareTag("Ground"))
-            collisionObjectCount--;
-    }
 
 }

@@ -56,16 +56,18 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Tool\ICommand.cs" />
     <Compile Include="Assets\Scripts\LevelPass.cs" />
     <Compile Include="Assets\Scripts\PlayerAnimation.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\DeathArea.cs" />
-    <Compile Include="Assets\LevelTime.cs" />
+    <Compile Include="Assets\Scripts\Tool\LevelTime.cs" />
     <Compile Include="Assets\Scripts\CamFollow.cs" />
     <Compile Include="Assets\Scripts\Apple.cs" />
     <Compile Include="Assets\Scripts\Command\EatAppleCommand.cs" />
+    <Compile Include="Assets\Scripts\Tool\LayerMaskUtility.cs" />
+    <Compile Include="Assets\Scripts\Trigger2D.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
