@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public GameObject mPlayer;
     private int appleCount = 0;
     public Action<int> OnValueChanged;
+    public static bool isReload;
     public int AppleCount
     {
         get { return appleCount; }
@@ -24,11 +25,14 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         OnValueChanged += AppleCountChange;
+        Invoke(nameof(GameStart), 2);
+        Invoke(nameof(CloseIntroduceUI), 4);
     }
 
     private void AppleCountChange(int obj)
     {
         GameObject.Find("Canvas/Score/appleCount").GetComponent<TMP_Text>().text = obj.ToString();
+
     }
     private void OnDestroy()
     {
@@ -42,5 +46,9 @@ public class GameManager : MonoBehaviour
             var temp = Instantiate(mPlayer, new Vector3(-2.5f, 13f, 0), Quaternion.identity);
             GameObject.FindObjectOfType<CamFollow>().player = temp.transform;
         }
+    }
+    void CloseIntroduceUI()
+    {
+        GameObject.Find("Canvas/Introduce").gameObject.SetActive(false);
     }
 }
